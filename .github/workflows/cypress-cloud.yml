@@ -8,7 +8,7 @@ on:
         default: cypres/e2e/*
         
 jobs:
-  cypress-electron-tests:
+  cypress-e2e-electron:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
