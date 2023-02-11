@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       cli:
-        description: Run by node command
+        description: Run by cypress command
         default: node runner.js
 
 jobs:
@@ -21,4 +21,4 @@ jobs:
         run: yarn install
         
       - name: Run E2E tests
-        run: ${{ github.events.inputs.cli }}
+        run: ${{ github.event.inputs.cli }}
