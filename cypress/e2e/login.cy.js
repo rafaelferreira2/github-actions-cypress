@@ -23,7 +23,7 @@ describe('Login', () => {
     it('senha incorreta', () => {
         cy.login('qa', 'teste')
         cy.get(toast)
-            .should('have.text', 'Simulando um BUG!')
+            .should('have.text', 'Oops! Credenciais inválidas :(')
     })
 
     it('com sucesso', () => {
